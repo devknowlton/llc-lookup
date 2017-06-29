@@ -6,7 +6,6 @@ var name_array = ["ThinkSmart","SpendVu"];
 
 
 app.get('/', function(request, response){
-  var llcname = request.body.llcname;
   response.send("Welcome to the page");
 })
 
