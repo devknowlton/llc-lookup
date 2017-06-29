@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var port = process.env.PORT || 3000;
 
 var name_array = ["ThinkSmart","SpendVu"];
 
@@ -28,5 +29,4 @@ app.get('/llc', function(request, response){
 })
 
 
-app.listen(8000);
-console.log("listening at port 8000...")
+app.listen(port);
