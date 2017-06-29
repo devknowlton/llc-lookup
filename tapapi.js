@@ -1,16 +1,8 @@
-var http = require('http');
-var fs = require('fs');
-var url = require('url');
 var express = require('express');
 var app = express();
-var path = require('path');
-var nodemailer = require('nodemailer');
-var bodyParser = require('body-parser');
+
 var name_array = ["ThinkSmart","SpendVu"];
 
-app.use(express.static(path.join(__dirname,'public')));
-
-app.use(bodyParser.json());
 
 app.get('/', function(request, response){
   var llcname = request.body.llcname;
